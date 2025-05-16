@@ -6,8 +6,8 @@ i {
   background-position: center;
   background-size: contain;
 }
-i.ic-search {
+.ic-search {
   width: 2rem;
   height: 2rem;
-  background-image: url(../assets/img/icon/ic-search@2x.png);
+  background-image: url(/assets/img/icon/ic-search@2x.png);
 }
