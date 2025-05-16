@@ -1,0 +1,12 @@
+/*icon*/
+i {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+i.ic-search {
+  width: 2rem;
+  height: 2rem;
+  background-image: url(/assets/img/ico/ic-search@2x.png);
+}

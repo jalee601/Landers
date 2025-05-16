@@ -1,0 +1,39 @@
+/* document --------------------------- */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 62.5%; /* 1rem = 10px */
+  /* web font + system font */
+  font-family: "Roboto", "Noto Sans KR", -apple-system, BlinkMacSystemFont,
+    Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol,
+    Noto Color Emoji;
+  font-weight: 400;
+  letter-spacing: -0.02rem;
+  color: #222;
+  /* smoothing font */
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  /* mouse drag none */
+  -ms-user-select: none;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+/* list style --------------------------- */
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

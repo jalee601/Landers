@@ -1,0 +1,143 @@
+/* to embed a font : https://fonts.google.com/ */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/campton");
+/* root ----------------------- */
+:root {
+  /* color */
+  --black: #000000;
+  --white: #ffffff;
+
+  --red900: #980020;
+  --red800: #c8102e; /* main color */
+  --red700: #da163a;
+  --red600: #e72343;
+  --red500: #e93e55; /* sub color */
+  --red400: #ff808b;
+  --red300: #ff9ea7;
+  --red200: #fecbd4;
+  --red50: #fbecee;
+
+  --brown: #ab6c22; /* point color */
+  --light-brown: #f5ede4;
+
+  --gray900: #121212;
+  --gray800: #1c1c1c;
+  --gray700: #2b2b2b;
+  --gray600: #424243;
+  --gray500: #747479;
+  --gray400: #bdbec0;
+  --gray300: #d7d8da;
+  --gray200: #e3e5e9;
+  --gray100: #f2f3f6;
+
+  --pink: #d54c79;
+  --yellow: #f6b22a;
+  --green: #00704a;
+
+  --system-red: #ff3529;
+  --system-blue: #236cd9;
+}
+
+/* header --------------------------- */
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+.sub-wrap {
+  width: 100%;
+  background-color: var(--red900);
+}
+.sub-wrap .sub-con {
+  max-width: 128rem;
+  width: 100%;
+  height: 3.6rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sub-wrap .sub-con .site-tab {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.sub-wrap .sub-con .site-tab > li {
+  width: 8rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: var(--white);
+  cursor: pointer;
+}
+.sub-wrap .sub-con .site-tab > li.active {
+  background-color: var(--red800);
+}
+.sub-wrap .sub-con .user-tab {
+  display: flex;
+  align-items: center;
+  column-gap: 2.1rem;
+}
+.sub-wrap .sub-con .user-tab > li {
+  display: flex;
+  align-items: center;
+  column-gap: 0.6rem;
+  font-size: 1.2rem;
+  color: var(--white);
+  cursor: pointer;
+  position: relative;
+}
+.sub-wrap .sub-con .user-tab > li + li::before {
+  content: "";
+  width: 1px;
+  height: 1rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  left: -1.1rem;
+}
+.nav-wrap {
+  width: 100%;
+  background-color: var(--red800);
+}
+.nav-wrap .nav-con > div img {
+  width: 10rem;
+}
+.nav-wrap .nav-con {
+  max-width: 128rem;
+  width: 100%;
+  height: 9.4rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.nav-wrap .nav-con .gnb-wrap {
+  display: flex;
+  align-items: center;
+  column-gap: 3.6rem;
+}
+.nav-wrap .nav-con .gnb-wrap > li {
+  font-size: 1.6rem;
+  color: var(--white);
+  font-weight: 500;
+  cursor: pointer;
+}
+.nav-wrap .nav-con .gnb-ico {
+  display: flex;
+  align-items: center;
+  column-gap: 2.8rem;
+}
+.nav-wrap .nav-con .gnb-ico > li {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--white);
+  cursor: pointer;
+}
